@@ -1,0 +1,264 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F0FA;
+    color: #332A3D;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #2B1745;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #BFA2DB;
+}
+
+/* Home Section */
+.hero {
+    min-height: 430px;
+    padding: 70px 10%;
+    background: linear-gradient(135deg, #BFA2DB, #D8BFF0);
+    color: #2B1745;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 260px;
+}
+
+.welcome {
+    color: #49305F;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #49305F;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    max-width: 550px;
+}
+
+.profile img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 5px solid #BFA2DB;
+    object-fit: cover;
+}
+
+/* Contact Me Button */
+.btn {
+    display: inline-block;
+    background-color: #2B1745;
+    color: #FFFFFF;
+    padding: 11px 25px;
+    margin-top: 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #49305F;
+    color: #FFFFFF;
+}
+
+/* Common Section Styling */
+.section {
+    padding: 55px 10%;
+}
+
+.section-title {
+    text-align: center;
+    color: #2B1745;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #BFA2DB;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(43, 23, 69, 0.10);
+}
+
+/* Education and Projects */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #BFA2DB;
+    box-shadow: 0 3px 12px rgba(43, 23, 69, 0.10);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #2B1745;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 8px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-container span {
+    background-color: #2B1745;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills-container span:hover {
+    background-color: #BFA2DB;
+    color: #2B1745;
+}
+
+/* Contact Section */
+.contact-content {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(43, 23, 69, 0.10);
+}
+
+.contact-content p {
+    margin-bottom: 12px;
+}
+
+.contact-content a {
+    color: #67458A;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2B1745;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .profile {
+        margin: auto;
+    }
+
+    .section {
+        padding: 40px 6%;
+    }
+}
